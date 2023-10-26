@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border-top-left-radius: 15px 30px;
+    border-bottom-right-radius: 15px 30px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 0 10px 0 black inset;
+}

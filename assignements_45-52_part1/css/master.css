@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: -5px 0px 0 0 #00BCD4, 5px 0 0 0 orangered;
+}

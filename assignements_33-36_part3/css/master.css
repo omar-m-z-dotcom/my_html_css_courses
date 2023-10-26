@@ -1,0 +1,37 @@
+p {
+    position: relative;
+    background-color: lightgrey;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 355px;
+    padding-left: 1%;
+    border-left: 3px solid violet;
+    margin: 20px auto;
+    height: 50px;
+    line-height: 49px;
+}
+
+p::before {
+    background-color: lightgray;
+    content: attr(data-person);
+    position: absolute;
+    top: 6px;
+    line-height: 36px;
+    left: -100px;
+    width: 60px;
+    height: 38px;
+    text-align: center;
+}
+
+p::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    left: -23px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent violet transparent transparent;
+}

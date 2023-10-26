@@ -1,0 +1,27 @@
+div {
+    position: relative;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: -webkit-xxx-large;
+    background-color: lightgray;
+    letter-spacing: 10px;
+}
+
+div::first-letter {
+    color: orangered;
+}
+
+div::before {
+    position: absolute;
+    top: -10%;
+    left: -1%;
+    content: "";
+    background-image: linear-gradient(to right, orangered 20%, lightblue 20%, lightblue 40%, lightgreen 40%, lightgreen 60%, violet 60%, violet 80%, purple 80%);
+    background-size: 100% 100%;
+    width: 102%;
+    height: 120%;
+    z-index: -1;
+}

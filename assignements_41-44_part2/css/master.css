@@ -1,0 +1,17 @@
+div {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+div::before {
+    content: 'elzero';
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 6px;
+    left: 195px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}

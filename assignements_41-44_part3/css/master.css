@@ -1,0 +1,13 @@
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+div {
+    border: 2px solid var(--mainColor, black);
+    padding: var(--mainPadding, 10px);
+    margin: var(--mainPadding, 10px) auto;
+    color: var(--mainColor, red);
+    text-transform: capitalize;
+    font-weight: bold;
+}

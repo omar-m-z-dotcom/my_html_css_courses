@@ -1,0 +1,11 @@
+div {
+    background-color: brown;
+    margin: 20px auto;
+    max-width: 400px;
+    max-height: 30px;
+    color: white;
+}
+
+.last {
+    overflow-y: hidden;
+}

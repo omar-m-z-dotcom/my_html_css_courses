@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightslategray;
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+
+div::before {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    content: "elzero";
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+div::after {
+    --dimensions: 71%;
+    position: absolute;
+    content: "elzero";
+    box-sizing: border-box;
+    top: -78px;
+    left: 32px;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    background-color: black;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    padding: 10px;
+    transform: rotate(45deg);
+}

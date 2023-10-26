@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 10% 1fr;
+}
+
+.grid div {
+    counter-increment: div-counter;
+    position: relative;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+.grid div::after {
+    display: flex;
+    content: "element " counter(div-counter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+}

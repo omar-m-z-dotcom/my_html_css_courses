@@ -1,0 +1,15 @@
+div {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: lightgray;
+}
+
+:empty {
+    background-color: red;
+}

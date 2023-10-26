@@ -1,0 +1,102 @@
+:root {
+    --page-display: flex;
+    --page-elements-margin: 5%;
+    --page-main-sections-width: 100%;
+    --page-main-sections-background-color: gray;
+    --page-main-sections-justify-content: space-between;
+    --page-flex-align-items: center;
+    --page-flex-justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.page {
+    display: var(--page-display);
+    background-color: lightgray;
+    padding: 10px;
+    height: 500px;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.header {
+    display: var(--page-display);
+    background-color: inherit;
+    width: var(--page-main-sections-width);
+    height: calc(15% - var(--page-elements-margin));
+    justify-content: var(--page-main-sections-justify-content);
+}
+
+.main-area {
+    display: var(--page-display);
+    background-color: inherit;
+    width: var(--page-main-sections-width);
+    height: 70%;
+    justify-content: var(--page-main-sections-justify-content);
+}
+
+.footer {
+    display: var(--page-display);
+    background-color: inherit;
+    width: var(--page-main-sections-width);
+    height: calc(15% - var(--page-elements-margin));
+}
+
+.logo {
+    display: var(--page-display);
+    background-color: var(--page-main-sections-background-color);
+    width: calc(18% - var(--page-elements-margin));
+    justify-content: var(--page-flex-justify-content);
+    align-items: var(--page-flex-align-items);
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: var(--page-display);
+    background-color: var(--page-main-sections-background-color);
+    width: 85%;
+    justify-content: flex-end;
+}
+
+.links li {
+    display: var(--page-display);
+    background-color: inherit;
+    justify-content: var(--page-flex-justify-content);
+    align-items: var(--page-flex-align-items);
+    margin-right: 10px;
+}
+
+.content {
+    padding: 10px;
+    background-color: var(--page-main-sections-background-color);
+    width: calc(83% - var(--page-elements-margin));
+}
+
+.sidebar {
+    padding: 10px;
+    background-color: var(--page-main-sections-background-color);
+    width: 20%;
+}
+
+.copyright {
+    padding: 10px;
+    display: var(--page-display);
+    background-color: var(--page-main-sections-background-color);
+    width: 80%;
+    align-items: var(--page-flex-align-items);
+}
+
+.design {
+    padding: 10px;
+    display: var(--page-display);
+    background-color: var(--page-main-sections-background-color);
+    width: 20%;
+    align-items: var(--page-flex-align-items);
+    justify-content: flex-end;
+}

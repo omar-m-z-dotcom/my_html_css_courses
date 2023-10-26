@@ -1,0 +1,43 @@
+div {
+    width: 400px;
+    position: relative;
+    background-color: lightgray;
+    z-index: 1;
+    margin: auto;
+    border-width: 3px;
+    border-style: solid;
+    border-color: orangered turquoise;
+    padding: 10px;
+}
+
+span {
+    position: absolute;
+    background-color: turquoise;
+    color: white;
+    width: 5%;
+    text-align: center;
+}
+
+.top-left {
+    border-right: 2px solid orangered;
+    top: -11%;
+    left: -3%;
+}
+
+.top-right {
+    border-left: 2px solid orangered;
+    top: -11%;
+    right: -3%;
+}
+
+.bottom-left {
+    border-right: 2px solid orangered;
+    top: 91%;
+    left: -3%;
+}
+
+.bottom-right {
+    border-left: 2px solid orangered;
+    top: 92%;
+    right: -3%;
+}
