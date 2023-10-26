@@ -1,0 +1,209 @@
+body {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+:root {
+    --div-dimensions: 600px;
+    /* --div-dimensions-35-percent: calc(var(--div-dimensions) * 0.35);
+    --div-dimensions-10-percent: calc(var(--div-dimensions) * 0.1);
+    --div-dimensions-8-percent: calc(var(--div-dimensions) * 0.08);
+    --div-dimensions-1-percent: calc(var(--div-dimensions) * 0.01);
+    --div-translate-down-46-percent-dimensions: calc(var(--div-dimensions) * 0.46);
+    --div-translate-down-52-percent-dimensions: calc(var(--div-dimensions) * 0.52);
+    --div-translate-left-98-percent-dimensions: calc(var(--div-dimensions) * -0.98);
+    --div-translate-up-98-percent-dimensions: calc(var(--div-dimensions) * -0.98); */
+    --animation-duration: 10s;
+}
+
+div {
+    display: flex;
+    position: relative;
+    width: var(--div-dimensions);
+    height: var(--div-dimensions);
+    background-color: rgb(34, 32, 32);
+}
+
+.E {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+.E::before,
+.E::after {
+    content: "";
+    height: 35%;
+    width: 90%;
+    background-color: white;
+}
+
+.E .moving-block {
+    height: 8%;
+    width: 8%;
+    top: 1%;
+    right: 1%;
+    position: absolute;
+    background-color: gold;
+    animation: E-moving-block var(--animation-duration) linear infinite both calc(var(--animation-duration) / 2);
+}
+
+.L {
+    justify-content: flex-end;
+}
+
+.L::before {
+    content: "";
+    height: 90%;
+    width: 90%;
+    background-color: white;
+}
+
+.L .moving-block {
+    height: 8%;
+    width: 8%;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    background-color: gold;
+    animation: L-moving-block var(--animation-duration) linear infinite both;
+}
+
+@keyframes E-moving-block {
+
+    /* from 0 to 10 calc((100% / 10) * n) to make the block in the E element*/
+    0% {
+        top: 1%;
+        right: 1%;
+        /* transform: translate(0, 0); */
+    }
+
+    2% {
+        top: 1%;
+        right: 1%;
+        /* transform: translate(0, 0); */
+    }
+
+
+    5% {
+        top: 1%;
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)), 0); */
+    }
+
+    10% {
+        top: calc(10% + 35% + 1%);
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)), calc(var(--div-translate-down-46-percent-dimensions) - var(--div-dimensions-1-percent))); */
+    }
+
+    15% {
+        top: calc(10% + 35% + 1%);
+        right: 1%;
+        /* transform: translate(0, calc(var(--div-translate-down-46-percent-dimensions) - var(--div-dimensions-1-percent))); */
+    }
+
+    20% {
+        top: calc(10% + 35% + 1%);
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-down-46-percent-dimensions) - var(--div-dimensions-1-percent))); */
+    }
+
+    25% {
+        top: calc(((10% + 35%) * 2) + 1%);
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-down-46-percent-dimensions) + var(--div-translate-down-52-percent-dimensions) - var(--div-dimensions-8-percent))); */
+    }
+
+    30% {
+        top: calc(((10% + 35%) * 2) + 1%);
+        right: 1%;
+        /* transform: translate(0,
+                calc(var(--div-translate-down-46-percent-dimensions) + var(--div-translate-down-52-percent-dimensions) - var(--div-dimensions-8-percent))); */
+    }
+
+    35% {
+        top: calc(((10% + 35%) * 2) + 1%);
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-down-46-percent-dimensions) + var(--div-translate-down-52-percent-dimensions) - var(--div-dimensions-8-percent))); */
+    }
+
+    40% {
+        top: calc(10% + 35% + 1%);
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-down-46-percent-dimensions) - var(--div-dimensions-1-percent))); */
+    }
+
+    45% {
+        top: 1%;
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)), 0); */
+    }
+
+    50% {
+        top: 1%;
+        right: 1%;
+        /* transform: translate(0, 0); */
+    }
+
+    100% {
+        top: 1%;
+        right: 1%;
+        /* transform: translate(0, 0); */
+    }
+}
+
+@keyframes L-moving-block {
+
+    /* from 0 to 3 calc((100% / 3) * n) to make the block in the L element */
+    0% {
+        bottom: 1%;
+        right: 1%;
+        /* transform: translate(0, 0); */
+    }
+
+    25% {
+        bottom: 1%;
+        right: calc(99% - 8%);
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)), 0); */
+    }
+
+    50% {
+        bottom: calc(99% - 8%);
+        right: calc(99% - 8%);
+        background-color: gold;
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-up-98-percent-dimensions) + var(--div-dimensions-8-percent))); */
+    }
+
+    53% {
+        bottom: calc(99% - 8%);
+        right: calc(99% - 8%);
+        background-color: transparent;
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-up-98-percent-dimensions) + var(--div-dimensions-8-percent))); */
+    }
+
+    75% {
+        bottom: calc(99% - 8%);
+        right: calc(99% - 8%);
+        background-color: transparent;
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-up-98-percent-dimensions) + var(--div-dimensions-8-percent))); */
+    }
+
+    100% {
+        bottom: calc(99% - 8%);
+        right: calc(99% - 8%);
+        background-color: transparent;
+        /* transform: translate(calc(var(--div-translate-left-98-percent-dimensions) + var(--div-dimensions-8-percent)),
+                calc(var(--div-translate-up-98-percent-dimensions) + var(--div-dimensions-8-percent))); */
+    }
+}

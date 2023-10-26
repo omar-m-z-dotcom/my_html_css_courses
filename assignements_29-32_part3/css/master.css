@@ -1,0 +1,34 @@
+.main {
+    width: 400px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.languages {
+    padding: 10px;
+    background-color: lightgray;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding: 0;
+}
+
+.sections li {
+    background-color: white;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.number li {
+    list-style: decimal outside;
+}
+
+.roman li {
+    list-style: upper-roman outside;
+}
+
+.bullet li {
+    list-style: circle inside;
+    width: 100%;
+}

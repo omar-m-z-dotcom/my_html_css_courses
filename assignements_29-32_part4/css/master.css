@@ -1,0 +1,57 @@
+table {
+    border-spacing: 2px;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    border-bottom: 2px solid lightgreen;
+}
+
+table td {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+thead td {
+    background-color: rgb(52, 51, 51);
+    color: white;
+    font-weight: bold
+}
+
+tbody td {
+    background-color: lightgray;
+}
+
+.avatar1 {
+    background-image: url(../img/avatar1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70% 80%;
+}
+
+.avatar2 {
+    background-image: url(../img/avatar2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70% 80%;
+}
+
+button {
+    display: inline;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: none;
+    outline: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.view {
+    background-color: turquoise;
+}
+
+tbody td .delete {
+    background-color: red;
+}

@@ -1,0 +1,142 @@
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+}
+
+* {
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+main {
+    background-color: lightgray;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas:
+        "osama-mohamed osama-mohamed osama-mohamed osama-mohamed ahmed-sayed ahmed-sayed shady-nabil shady-nabil"
+        "osama-mohamed osama-mohamed osama-mohamed osama-mohamed ahmed-sayed ahmed-sayed shady-nabil shady-nabil"
+        "osama-mohamed osama-mohamed osama-mohamed osama-mohamed ahmed-sayed ahmed-sayed shady-nabil shady-nabil"
+        "mohamed-ibrahim mohamed-ibrahim mahmoud-mohamed mahmoud-mohamed mahmoud-mohamed mahmoud-mohamed shady-nabil shady-nabil"
+        "mohamed-ibrahim mohamed-ibrahim mahmoud-mohamed mahmoud-mohamed mahmoud-mohamed mahmoud-mohamed shady-nabil shady-nabil"
+        "mohamed-ibrahim mohamed-ibrahim mahmoud-mohamed mahmoud-mohamed mahmoud-mohamed mahmoud-mohamed shady-nabil shady-nabil"
+        "mohamed-ibrahim mohamed-ibrahim ezz-eldin ezz-eldin ezz-eldin ezz-eldin shady-nabil shady-nabil"
+        "mohamed-ibrahim mohamed-ibrahim ezz-eldin ezz-eldin ezz-eldin ezz-eldin shady-nabil shady-nabil"
+        "mohamed-ibrahim mohamed-ibrahim ezz-eldin ezz-eldin ezz-eldin ezz-eldin shady-nabil shady-nabil"
+        "mohamed-sayed mohamed-sayed ibrahim-sayed ibrahim-sayed gamal-sayed gamal-sayed eman-sayed eman-sayed"
+        "mohamed-sayed mohamed-sayed ibrahim-sayed ibrahim-sayed gamal-sayed gamal-sayed eman-sayed eman-sayed";
+    gap: 5px;
+}
+
+.white,
+.black {
+    position: relative;
+    border-bottom: 2px solid red;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    align-content: flex-start;
+}
+
+.white::after,
+.black::after {
+    --position: 90%;
+    content: "\"";
+    position: absolute;
+    color: gray;
+    font-size: 2em;
+    background-color: transparent;
+    top: var(--position);
+    left: var(--position);
+    transform: rotate(15deg);
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.job {
+    color: gray;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.name {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+}
+
+.white section,
+.black section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-size: 0.8em;
+}
+
+.osama.mohamed {
+    grid-area: osama-mohamed;
+}
+
+.ahmed.sayed {
+    grid-area: ahmed-sayed;
+}
+
+.shady.nabil {
+    grid-area: shady-nabil;
+}
+
+.mohamed.ibrahim {
+    grid-area: mohamed-ibrahim;
+}
+
+.mahmoud.mohamed {
+    grid-area: mahmoud-mohamed;
+}
+
+.ezz.eldin {
+    grid-area: ezz-eldin;
+}
+
+.mohamed.sayed {
+    grid-area: mohamed-sayed;
+}
+
+.ibrahim.sayed {
+    grid-area: ibrahim-sayed;
+}
+
+.gamal.sayed {
+    grid-area: gamal-sayed;
+}
+
+.eman.sayed {
+    grid-area: eman-sayed;
+}

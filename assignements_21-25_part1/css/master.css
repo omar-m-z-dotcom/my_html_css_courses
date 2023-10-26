@@ -1,0 +1,22 @@
+div {
+    margin: 20px auto;
+    padding: 3% 5%;
+    border: 5px solid;
+}
+
+.one {
+    border-color: orangered;
+}
+
+.two {
+    border-color: turquoise;
+}
+
+div p {
+    text-align: center;
+    font-size: 2em;
+    background-color: gray;
+    padding: inherit;
+    border: inherit;
+    border-color: inherit;
+}

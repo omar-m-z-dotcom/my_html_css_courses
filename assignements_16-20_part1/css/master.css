@@ -1,0 +1,6 @@
+div {
+    text-align: center;
+    text-shadow: 2px 2px 0 orangered, 4px 4px 0 blue, 6px 6px 0 purple;
+    text-transform: capitalize;
+    word-spacing: 20px;
+}

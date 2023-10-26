@@ -1,0 +1,23 @@
+div {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    /* in normal language */
+    background-color: blueviolet;
+    /* in rgb format */
+    background-color: rgb(138, 43, 226);
+    /* in hsl format */
+    background-color: hsl(271, 76%, 53%);
+    /* in hex format */
+    background-color: #8a2ce2;
+}
+
+.assign-1-shape-2 {
+    /* in rgba format */
+    background-color: rgba(137, 43, 226, 0.5);
+}
+
+.assign-1-shape-3 {
+    /* in hsla format */
+    background-color: rgba(138, 44, 226, 0.1);
+}

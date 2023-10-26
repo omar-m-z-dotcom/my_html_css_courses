@@ -1,0 +1,29 @@
+body {
+    counter-increment: counter;
+}
+
+p {
+    position: relative;
+    line-height: 36px;
+    width: 300px;
+    margin: 10px auto;
+    background-color: lightgray;
+    padding-left: 2%;
+    height: 37px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-right: 3px solid orangered;
+}
+
+p::before {
+    position: absolute;
+    content: counter(counter);
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    font-size: 1em;
+    width: 10%;
+    text-align: center;
+    left: -32px;
+}

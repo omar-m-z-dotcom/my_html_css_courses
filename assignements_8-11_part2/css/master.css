@@ -1,0 +1,17 @@
+div {
+    margin: 20px auto;
+    width: 400px;
+    background-color: gray;
+}
+
+.shape-1 {
+    padding-left: 1% solid purple;
+}
+
+.shape-2 {
+    visibility: hidden;
+}
+
+.shape-3 {
+    padding-left: 1% solid turquoise;
+}

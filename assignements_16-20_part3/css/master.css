@@ -1,0 +1,17 @@
+div {
+    background-color: darkgray;
+    padding: 20px 15px;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.two {
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.three {
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

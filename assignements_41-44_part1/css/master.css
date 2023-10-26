@@ -1,0 +1,31 @@
+.parent {
+    width: fit-content;
+    margin: 50px auto;
+    height: fit-content;
+    background-color: #f3f2f2;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: margin-top 0.5s;
+}
+
+.child {
+    padding: inherit;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ccc;
+    margin: 10px auto;
+    transition: margin-top 0.5s 0.5s linear;
+}
+
+.parent:hover {
+    margin-top: 20px;
+}
+
+.parent:hover .child {
+    margin-top: 30px;
+}

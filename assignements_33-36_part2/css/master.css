@@ -1,0 +1,27 @@
+div {
+    position: relative;
+    margin: auto;
+    background-color: lightgray;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    width: fit-content;
+    /* padding-left: 3%;
+    padding-right: 6%; */
+    padding-right: 1em;
+}
+
+div::first-letter {
+    visibility: hidden;
+}
+
+div::before {
+    position: absolute;
+    font-size: 0.7em;
+    top: 5px;
+    left: -5px;
+    content: "1";
+    background-color: red;
+    color: white;
+}
