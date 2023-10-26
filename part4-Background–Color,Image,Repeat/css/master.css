@@ -1,0 +1,19 @@
+div {
+    /* colour of element background with hex*/
+    background-color: #ff0000;
+    /* colour of element background with rgb*/
+    background-color: rgb(255, 0, 0);
+    /* colour of element background with rgba a for alpha-channel (opacity of the colour*/
+    background-color: rgba(255, 0, 0, 0.5);
+    /* background image */
+    background-image: url("../img/How-to-Learn-Programming.png");
+    /* background image repeat pattern */
+    /* don't repeat the image */
+    background-repeat: no-repeat;
+    /* repeat the image horizontally */
+    background-repeat: repeat-x;
+    /* repeat the image vertically */
+    background-repeat: repeat-y;
+    /* repeat the image both horizontally and vertically, also it's the default value*/
+    background-repeat: repeat;
+}

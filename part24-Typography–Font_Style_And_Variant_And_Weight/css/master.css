@@ -1,0 +1,9 @@
+div {
+  /* makes charchters capital but samller than their usual size */
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+p {
+  text-transform: uppercase;
+}

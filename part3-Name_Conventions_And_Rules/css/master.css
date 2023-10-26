@@ -1,0 +1,20 @@
+/* css name conventions and rules */
+/* you can't start a class name with a number */
+/* you can't use a space in a class name */
+/* it's a best practice to use lowercase letters in class names and use dashes to separate words */
+example-class-name {
+    color: red;
+}
+
+._div2 {
+    color: blue;
+}
+
+/* bad example */
+/* .3div{
+    color: green;
+} */
+/* good example */
+/* .div3 {
+    color: green;
+} */

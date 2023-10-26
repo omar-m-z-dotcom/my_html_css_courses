@@ -1,0 +1,41 @@
+div {
+    /* colour of element background with hex*/
+    background-color: #ff0000;
+    /* colour of element background with rgb*/
+    background-color: rgb(255, 0, 0);
+    /* colour of element background with rgba a for alpha-channel (opacity of the colour*/
+    background-color: rgba(255, 0, 0, 0.5);
+    /* background image */
+    background-image: url("../img/How-to-Learn-Programming.png");
+    /* background image repeat pattern */
+    /* don't repeat the image */
+    background-repeat: no-repeat;
+    /* repeat the image horizontally */
+    background-repeat: repeat-x;
+    /* repeat the image vertically */
+    background-repeat: repeat-y;
+    /* repeat the image both horizontally and vertically, also it's the default value*/
+    background-repeat: repeat;
+    /* how the background stays attached to the element as you scroll it with the mouse */
+    /* background stays fixed while you scroll through the element */
+    background-attachment: fixed;
+    /* background scrolls with the element (default value)*/
+    background-attachment: scroll;
+    /* background scrolls with the element, but it's fixed to the viewport */
+    background-attachment: local;
+    /* how to position the background*/
+    background-position: left top;
+    /* position of the background image in pixels */
+    background-position: 10px 20px;
+    /* position of the background image in percentages */
+    background-position: 10% 20%;
+    /* how to control the background size*/
+    /* background image is resized to fit the element */
+    background-size: contain;
+    /* background image is resized to cover the element */
+    background-size: cover;
+    /* background image is resized to the specified width and height */
+    background-size: 100px 200px;
+    /* background image is resized to the specified width and height in percentages */
+    background-size: 100% 50%;
+}

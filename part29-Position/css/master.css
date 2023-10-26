@@ -1,0 +1,45 @@
+div {
+  color: white;
+  width: 100px;
+  padding: 10px;
+}
+
+.one {
+  background-color: red;
+  position: relative;
+}
+
+.one .inOne {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 30%;
+  background-color: blue;
+}
+
+.two {
+  position: absolute;
+  background-color: green;
+  top: 50%;
+  left: 80%;
+}
+
+.three {
+  position: fixed;
+  background-color: yellow;
+  top: 80%;
+  left: 50%;
+}
+
+.four {
+  /* default */
+  position: static;
+  background-color: purple;
+  top: 80%;
+  left: 80%;
+}
+
+body {
+  height: 5000px;
+}

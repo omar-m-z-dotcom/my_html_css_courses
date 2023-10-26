@@ -1,0 +1,8 @@
+button {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  /* defualt value */
+  cursor: pointer;
+}

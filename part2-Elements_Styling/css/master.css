@@ -1,0 +1,18 @@
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* multi
+    line
+    comment */
+
+.special {
+    color: #0000ff;
+}

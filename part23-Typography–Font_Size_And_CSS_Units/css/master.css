@@ -1,0 +1,27 @@
+body {
+  font-size: 40px;
+}
+
+div {
+  font-size: 5vw;
+}
+
+/* 1. em Unit: The em unit allows setting the font size of an element relative to the font size of its parent. When the size of the parent element changes,
+the size of the child changes automatically. Note: When em units are used on font-size property,
+the size is relative to the font-size of the parent. When used on other properties,
+it’s relative to the font-size of that element itself.
+for example if the size of the <div> is 20px then the font-size of <p> will 2*20px=40px and if margin of <p> is set to 1.5em then the margin is 1.5*40px=60px */
+div p {
+  font-size: 2em;
+  margin: 1.5em;
+}
+
+/* 2. rem Unit: The rem is based upon the font-size value of the root element,
+which is the <html>element. And if the <html> element doesn’t have a specified font-size,
+the browser default value of 16px is used. So here only the value of the root is considered,
+and there is no relation with a parent element. same thing with properties other than the font-size.
+for example if <html> font-size is set to 30px then the font-size of <span> is 2*30px=60px and if margin of <span> is set to 1.5rem the margin is 1.5*30px=45px */
+div span {
+  font-size: 2rem;
+  margin: 1.5rem;
+}

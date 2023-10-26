@@ -1,0 +1,13 @@
+div {
+  padding: 20px;
+  background-color: #eee;
+  margin: 20px auto;
+  width: 300px;
+  /* H-shadow | V-shadow | Blur | Spread | Color | Inset\Outset */
+  box-shadow:
+    0 -10px 10px 0 #F10000,
+    10px 0 10px 0 #000,
+    0 10px 10px 0 #080,
+    -10px 0 10px 0 #00f,
+    0 0 10px 20px yellow;
+}

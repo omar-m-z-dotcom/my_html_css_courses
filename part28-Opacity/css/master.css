@@ -1,0 +1,10 @@
+.one {
+  background-color: red;
+  /* applies opacity to entire div */
+  opacity: 0.1;
+}
+
+.two {
+  /* applies opacity only to background-color only */
+  background-color: rgb(255 0 0 / 0.1)
+}

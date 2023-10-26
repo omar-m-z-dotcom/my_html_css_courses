@@ -1,0 +1,18 @@
+.parent {
+  background-color: red;
+  padding: 10px;
+}
+
+.parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  width: 25%;
+  float: left;
+}
+
+/* used to return div layout to it's normal state regedless of float elements */
+.clear {
+  clear: both;
+}
